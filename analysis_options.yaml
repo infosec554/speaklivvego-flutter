@@ -1,0 +1,25 @@
+include: package:very_good_analysis/analysis_options.yaml
+analyzer:
+  exclude:
+    # Ignore generated files
+    - lib/generated/**
+    - lib/l10n/**
+    - lib/**/*.g.dart
+    - lib/**/*.freezed.dart
+    - build/**
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+linter:
+
+  rules:
+    avoid_print: true
+    prefer_single_quotes: true
+    public_member_api_docs: false
+    eol_at_end_of_file: false
+    use_setters_to_change_properties: false
+    sort_pub_dependencies: false
+    prefer_final_locals: true
+    avoid_redundant_argument_values: true
+
+
